@@ -3,15 +3,13 @@
   --secondary-font-family: "Nunito", sans-serif;
 }
 body {
-  background: linear-gradient(
-    110.5deg,
-    rgba(248, 196, 249, 0.66) 22.8%,
-    rgba(253, 122, 4, 0.15) 64.6%
-  );
+  background: linear-gradient(to bottom, #ffffff, #d0eaff);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
 }
 h1 {
   margin-bottom: 15px;
-  font-size: 40px;
+  font-size: 60px;
 }
 h2 {
   font-size: 96px;
@@ -19,6 +17,7 @@ h2 {
 }
 h3 {
   font-family: var(--secondary-font-family);
+  font-weight: bold;
 }
 
 h4 {
@@ -42,22 +41,6 @@ p {
   margin: 50px 0;
 }
 
-.buttons {
-  color: white;
-  background: rgba(205, 98, 207, 0.66);
-  padding: 15px 30px;
-  margin: 20px;
-  border: 1px 1px 1px white;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-left: 0;
-}
-.buttons:hover {
-  color: white;
-  background: rgba(202, 48, 205, 0.66);
-  transition: all 200ms ease-in-out;
-}
-
 .icon {
   font-size: 40px;
   color: rgba(232, 120, 234, 0.66);
@@ -71,74 +54,35 @@ p {
 }
 .contact-link:hover {
   cursor: pointer;
-  color: rgba(232, 120, 234, 0.66);
+  color: #abdef7;
 }
 .icon:hover {
   cursor: pointer;
-  color: rgba(202, 48, 205, 0.66);
-}
-.image-description {
-  margin-top: 50px;
+  color: #abdef7;
 }
 
-@media (max-width: 576px) {
-  h1 {
-    font-size: 35px;
-  }
-  h2 {
-    font-size: 76px;
-  }
-  h4 {
-    font-size: 45px;
-  }
-  p {
-    font-size: 20px;
-  }
-  .box {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .title {
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-  .image-description {
-    text-align: center;
-  }
-  .contacts {
-    margin-bottom: 30px;
-  }
+.hours-section {
+  padding: 40px 50px;
+  background: linear-gradient(to bottom, #ffffff, #d0eaff);
+  border-radius: 20px;
+  font-family: "Segoe UI", sans-serif;
+  max-width: 1000px;
+  margin-left: 160px; /* Pushes to the right */
+  margin-right: 0;
 }
-@media (min-width: 810px) and (max-width: 1080px) {
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 76px;
-  }
-  h3 {
-    font-size: 23px;
-  }
-  h4 {
-    font-size: 50px;
-  }
-  p {
-    font-size: 18px;
-  }
-  .box {
-    margin-top: 180px;
-    margin-bottom: 80px;
-  }
-  .title {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .text-about-me {
-    margin: 0;
-  }
-  .image-description {
-    margin-top: 0;
-    margin-bottom: 50px;
-    text-align: center;
-  }
+
+.custom-img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  border-radius: 70px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+.custom-logo {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 100px;
+  margin-left: 100px;
 }

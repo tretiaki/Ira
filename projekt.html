@@ -12,11 +12,6 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://kit.fontawesome.com/c541110e6f.js"
       crossorigin="anonymous"
     ></script>
@@ -73,12 +68,15 @@
               >Kontakty</a
             >
             <a
-              href="mailto:tretiak.ira1207@gmail.com"
+              href="mailto:ambulance@gmail.com"
               class="nav-link"
               target="_blank"
               title="mail"
-              >Napište nám</a
-            >
+              >Napište nám<i
+                class="fa-regular fa-envelope"
+                style="margin-left: 6px; vertical-align: -1px"
+              ></i
+            ></a>
           </div>
         </div>
       </div>
@@ -94,11 +92,7 @@
           </h3>
         </div>
         <div class="col-md-6">
-          <img
-            src="images/photo.jpg"
-            alt="Weather App"
-            class="img-fluid shadow rounded"
-          />
+          <img src="images/logo.jpg" alt="Logo" class="custom-logo" />
         </div>
       </div>
       <div class="row">
@@ -114,7 +108,7 @@
             <img
               src="images/stomatologie.jpg"
               alt="Stomatologie"
-              class="img-fluid rounded shadow"
+              class="custom-img"
             />
             <h3>Stomatologie</h3>
             <p>
@@ -125,11 +119,7 @@
 
           <!-- Prevence -->
           <div class="col-md-6 service-box">
-            <img
-              src="images/prevence.jpg"
-              alt="Prevence"
-              class="img-fluid rounded shadow"
-            />
+            <img src="images/prevence.jpg" alt="Prevence" class="custom-img" />
             <h3>Prevence</h3>
             <p>
               Pravidelné kontroly, díky kterým udržíme váš chrup v perfektní
@@ -142,7 +132,7 @@
             <img
               src="images/hygiena.jpg"
               alt="Dentální hygiena"
-              class="img-fluid rounded shadow"
+              class="custom-img"
             />
             <h3>Dentální hygiena</h3>
             <p>
@@ -156,7 +146,7 @@
             <img
               src="images/chirurgie.jpg"
               alt="Stomatochirurgie"
-              class="img-fluid rounded shadow"
+              class="custom-img"
             />
             <h3>Stomatochirurgie</h3>
             <p>
@@ -169,7 +159,7 @@
             <img
               src="images/rekonstrukce.jpg"
               alt="Rekonstrukce chrupu"
-              class="img-fluid rounded shadow"
+              class="custom-img"
             />
             <h3>Kompletní rekonstrukce chrupu</h3>
             <p>Navrátíme vašemu úsměvu plnou funkci i krásu.</p>
@@ -180,7 +170,7 @@
             <img
               src="images/moudrost.jpg"
               alt="Extrakce zubů moudrosti"
-              class="img-fluid rounded shadow"
+              class="custom-img"
             />
             <h3>Extrakce zubů moudrosti</h3>
             <p>Zbavíme vás problémových zubů moudrosti rychle a bezpečně.</p>
@@ -200,44 +190,67 @@
         </div>
       </div>
       <div class="row">
+        <section class="hours-section">
+          <table class="hours-table">
+            <tr>
+              <th>Den</th>
+              <th>Čas</th>
+            </tr>
+            <tr>
+              <td>Pondělí</td>
+              <td>7:00 – 14:00</td>
+            </tr>
+            <tr>
+              <td>Úterý</td>
+              <td>16:00 – 19:00</td>
+            </tr>
+            <tr>
+              <td>Středa</td>
+              <td>15:00 – 18:00</td>
+            </tr>
+            <tr>
+              <td>Čtvrtek</td>
+              <td>7:00 – 15:00</td>
+            </tr>
+            <tr>
+              <td>Pátek</td>
+              <td>6:00 – 12:00</td>
+            </tr>
+          </table>
+          <div class="info-text">
+            <p>
+              Text lze modře zaměřit co záběr i co na běžného pracovce
+              ambulance.
+            </p>
+            <p><strong>!!! Neplatí na nouzty</strong></p>
+            <p>
+              Napište rychle něco na nouzy:
+              <a href="mailto:ambulance@gmail.com">ambulance@gmail.com</a><br />
+              +420 111 556 78
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="row">
         <div class="d-flex justify-content-center">
           <h4 id="kontakty" class="title" title="Kontakty">Kontakty</h4>
         </div>
       </div>
-      <div class="row">
-        <a
-          href="mailto:tretiak.ira1207@gmail.com"
-          class="contact-link mb-5 text-center"
-          target="_blank"
-          >tretiak.ira1207@gmail.com</a
-        >
-      </div>
+
       <div class="row">
         <div class="col text-center contacts">
-          <a
-            href="https://www.linkedin.com/in/iryna-tretiak-992ba4202"
-            class="contact-link"
-            target="_blank"
-            title="Open LinkedIn"
-            ><i class="fa-brands fa-linkedin icon"></i
+          <a href="" class="contact-link" target="_blank" title="Open LinkedIn"
+            ><i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        <div class="col text-center contacts">
+          <a href="" class="contact-link" target="_blank" title="Open TikTok"
+            ><i class="fa-brands fa-tiktok"></i
           ></a>
         </div>
         <div class="col text-center contacts">
-          <a
-            href="https://github.com/tretiaki/portfolio-site-project"
-            class="contact-link"
-            target="_blank"
-            title="Open GitHub"
-            ><i class="fa-brands fa-github icon"></i
-          ></a>
-        </div>
-        <div class="col text-center contacts">
-          <a
-            href="https://www.instagram.com/invites/contact/?i=18u4d1zz5axpu&utm_content=3ger6ex"
-            class="contact-link"
-            target="_blank"
-            title="Open Instagram"
-            ><i class="fa-brands fa-instagram icon"></i
+          <a href="" class="contact-link" target="_blank" title="Open Instagram"
+            ><i class="fa-brands fa-instagram"></i
           ></a>
         </div>
       </div>
