@@ -1,0 +1,144 @@
+:root {
+  --default-font-family: "Playfair Display", serif;
+  --secondary-font-family: "Nunito", sans-serif;
+}
+body {
+  background: linear-gradient(
+    110.5deg,
+    rgba(248, 196, 249, 0.66) 22.8%,
+    rgba(253, 122, 4, 0.15) 64.6%
+  );
+}
+h1 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+h2 {
+  font-size: 96px;
+  font-family: var(--default-font-family);
+}
+h3 {
+  font-family: var(--secondary-font-family);
+}
+
+h4 {
+  font-size: 50px;
+  font-family: var(--default-font-family);
+}
+p {
+  font-size: 23px;
+  font-family: var(--secondary-font-family);
+}
+
+.box {
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+.title {
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
+.text-pro-nas {
+  margin: 50px 0;
+}
+
+.buttons {
+  color: white;
+  background: rgba(205, 98, 207, 0.66);
+  padding: 15px 30px;
+  margin: 20px;
+  border: 1px 1px 1px white;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 0;
+}
+.buttons:hover {
+  color: white;
+  background: rgba(202, 48, 205, 0.66);
+  transition: all 200ms ease-in-out;
+}
+
+.icon {
+  font-size: 40px;
+  color: rgba(232, 120, 234, 0.66);
+  margin-bottom: 20px;
+}
+.contact-link {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  font-family: var(--secondary-font-family);
+}
+.contact-link:hover {
+  cursor: pointer;
+  color: rgba(232, 120, 234, 0.66);
+}
+.icon:hover {
+  cursor: pointer;
+  color: rgba(202, 48, 205, 0.66);
+}
+.image-description {
+  margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 76px;
+  }
+  h4 {
+    font-size: 45px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .title {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .image-description {
+    text-align: center;
+  }
+  .contacts {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 810px) and (max-width: 1080px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 76px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  h4 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .box {
+    margin-top: 180px;
+    margin-bottom: 80px;
+  }
+  .title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .text-about-me {
+    margin: 0;
+  }
+  .image-description {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
