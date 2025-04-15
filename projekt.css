@@ -1,88 +1,170 @@
-:root {
-  --default-font-family: "Playfair Display", serif;
-  --secondary-font-family: "Nunito", sans-serif;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-  background: linear-gradient(to bottom, #ffffff, #d0eaff);
-  min-height: 100vh;
-  font-family: "Segoe UI", sans-serif;
-}
-h1 {
-  margin-bottom: 15px;
-  font-size: 60px;
-}
-h2 {
-  font-size: 96px;
-  font-family: var(--default-font-family);
-}
-h3 {
-  font-family: var(--secondary-font-family);
-  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #eaf4fb);
+  color: #111;
 }
 
-h4 {
-  font-size: 50px;
-  font-family: var(--default-font-family);
-}
-p {
-  font-size: 23px;
-  font-family: var(--secondary-font-family);
-}
-
-.box {
-  margin-top: 150px;
-  margin-bottom: 80px;
-}
-.title {
-  margin-top: 130px;
-  margin-bottom: 50px;
-}
-.text-pro-nas {
-  margin: 50px 0;
-}
-
-.icon {
-  font-size: 40px;
-  color: rgba(232, 120, 234, 0.66);
-  margin-bottom: 20px;
-}
-.contact-link {
-  font-size: 25px;
-  text-decoration: none;
-  color: black;
-  font-family: var(--secondary-font-family);
-}
-.contact-link:hover {
-  cursor: pointer;
-  color: #abdef7;
-}
-.icon:hover {
-  cursor: pointer;
-  color: #abdef7;
-}
-
-.hours-section {
-  padding: 40px 50px;
-  background: linear-gradient(to bottom, #ffffff, #d0eaff);
-  border-radius: 20px;
-  font-family: "Segoe UI", sans-serif;
-  max-width: 1000px;
-  margin-left: 160px; /* Pushes to the right */
-  margin-right: 0;
-}
-
-.custom-img {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 240px;
-  height: auto;
-  border-radius: 70px;
-  margin-bottom: 15px;
-  margin-top: 25px;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #111;
+  font-weight: normal;
+}
+
+nav a:hover {
+  color: #007bff;
 }
 .custom-logo {
-  width: 100%;
-  max-width: 500px;
+  width: 130%;
+  max-width: 700px;
   height: auto;
   border-radius: 100px;
-  margin-left: 100px;
+  margin-left: 150px;
+}
+.description {
+  display: flex;
+  align-items: center;
+  padding: 100px 100px;
+  gap: 10px;
+}
+
+.description-text {
+  max-width: 50%;
+}
+
+.description-text h1 {
+  font-size: 64px;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+}
+
+.description-text p {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.description img {
+  width: 350px;
+  border-radius: 30px;
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 48px;
+  font-family: Georgia, serif;
+  margin-bottom: 40px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: transparent;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.service-card p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .description-text,
+  .description img {
+    max-width: 100%;
+  }
+}
+
+.section-1 .text {
+  flex: 1 1 45%;
+}
+
+.section-1 .image {
+  flex: 1 1 45%;
+  text-align: right;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.service-box {
+  text-align: center;
+}
+
+.hours-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.hours-table th,
+.hours-table td {
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.info-text p {
+  margin: 10px 0;
+}
+
+.contacts {
+  margin-top: 30px;
 }

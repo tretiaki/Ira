@@ -1,259 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Stomatologie" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/c541110e6f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Playfair+Display&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="projekt.css" class="css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Stomatologie | Smile</title>
+    <link rel="stylesheet" href="projekt.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-      <div class="container-fluid">
-        <a
-          class="navbar-brand ms-2"
-          href="projekt.html"
-          title="Stomatologie | Smile"
-          ><strong>Stomatologie | Smile</strong></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a
-              class="nav-link active"
-              aria-current="page"
-              href="projekt.html"
-              title="Pro nás"
-              >Pro nás</a
-            >
-            <a class="nav-link" href="projekt.html#sluzby" title="Služby"
-              >Služby</a
-            ><a class="nav-link" href="projekt.html#cenik" title="Ceník"
-              >Ceník</a
-            >
-            <a
-              class="nav-link"
-              href="projekt.html#ordinacni_hodiny"
-              title="Ordinační hodiny"
-              >Ordinační hodiny</a
-            >
-            <a class="nav-link" href="projekt.html#kontakty" title="Kontakty"
-              >Kontakty</a
-            >
-            <a
-              href="mailto:ambulance@gmail.com"
-              class="nav-link"
-              target="_blank"
-              title="mail"
-              >Napište nám<i
-                class="fa-regular fa-envelope"
-                style="margin-left: 6px; vertical-align: -1px"
-              ></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="container box">
-      <div class="row section-1">
-        <div class="col-md-6 text-pro-nas">
-          <h2 title="Iryna Tretiak">Stomatologie "Smile"</h2>
-          <h3>
-            Jsme moderní stomatologická ordinace, která klade důraz na
-            individuální přístup, bezbolestné ošetření a příjemné prostředí.
-            Naším cílem je zdravý a krásný úsměv každého pacienta.
-          </h3>
-        </div>
-        <div class="col-md-6">
-          <img src="images/logo.jpg" alt="Logo" class="custom-logo" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="d-flex justify-content-center">
-          <h4 id="sluzby" class="title" title="Služby">Služby</h4>
-        </div>
-      </div>
+    <header>
+      <div>Stomatologie | Smile</div>
+      <nav>
+        <a href="#description">Pro nás</a>
+        <a href="#sluzby">Služby</a>
+        <a href="#cenik">Ceník</a>
+        <a href="#ordinacnihodiny">Ordinační hodiny</a>
+        <a href="#kontakty">Kontakty</a>
+        <a href="mailto:ambulance@gmail.com">Napište nám ✉</a>
+      </nav>
+    </header>
 
-      <div class="container">
-        <div class="row">
-          <!-- Stomatologie -->
-          <div class="col-md-6 service-box">
-            <img
-              src="images/stomatologie.jpg"
-              alt="Stomatologie"
-              class="custom-img"
-            />
-            <h3>Stomatologie</h3>
-            <p>
-              Pečujeme o váš úsměv komplexně – zdraví a krása zubů v každém
-              věku.
-            </p>
-          </div>
+    <section class="description" id="description">
+      <div class="description-text">
+        <h1>Stomatologie "Smile"</h1>
+        <p>
+          Jsme moderní stomatologická ordinace, která klade důraz na
+          individuální přístup, bezbolestné ošetření a příjemné prostředí. Naším
+          cílem je zdravý a krásný úsměv každého pacienta.
+        </p>
+      </div>
+      <img src="images/logo.jpg" alt="Tooth Image" class="custom-logo" />
+    </section>
 
-          <!-- Prevence -->
-          <div class="col-md-6 service-box">
-            <img src="images/prevence.jpg" alt="Prevence" class="custom-img" />
-            <h3>Prevence</h3>
-            <p>
-              Pravidelné kontroly, díky kterým udržíme váš chrup v perfektní
-              kondici.
-            </p>
-          </div>
+    <section class="section" id="sluzby">
+      <h2>Služby</h2>
+      <div class="services">
+        <div class="service-card">
+          <img src="images/stomatologie.jpg" alt="Stomatologie" />
+          <h3>Stomatologie</h3>
+          <p>
+            Pečujeme o váš úsměv komplexně – zdraví a krása zubů v každém věku.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="images/prevence.jpg" alt="Prevence" />
+          <h3>Prevence</h3>
+          <p>
+            Pravidelné kontroly, díky kterým udržíme váš chrup v perfektní
+            kondici.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="images/hygiena.jpg" alt="Dentální hygiena" />
+          <h3>Dentální hygiena</h3>
+          <p>
+            Profesionální čištění zubů, které vám pomůže předejít kazům a
+            zánětům.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="images/chirurgie.jpg" alt="Stomatochirurgie" />
+          <h3>Stomatochirurgie</h3>
+          <p>Šetrné chirurgické zákroky, které zvládnete bez obav a bolesti.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/prevence.jpg" alt="Další služby" />
+          <h3>Estetika</h3>
+          <p>
+            Pomůžeme vám dosáhnout zářivého úsměvu díky moderním estetickým
+            metodám.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="images/rekonstrukce.jpg" alt="Rekonstrukce chrupu" />
+          <h3>Kompletní rekonstrukce chrupu</h3>
+          <p>Navrátíme vašemu úsměvu plnou funkci i krásu.</p>
+        </div>
 
-          <!-- Dentální hygiena -->
-          <div class="col-md-6 service-box">
-            <img
-              src="images/hygiena.jpg"
-              alt="Dentální hygiena"
-              class="custom-img"
-            />
-            <h3>Dentální hygiena</h3>
-            <p>
-              Profesionální čištění zubů, které vám pomůže předejít kazům a
-              zánětům.
-            </p>
-          </div>
-
-          <!-- Stomatochirurgie -->
-          <div class="col-md-6 service-box">
-            <img
-              src="images/chirurgie.jpg"
-              alt="Stomatochirurgie"
-              class="custom-img"
-            />
-            <h3>Stomatochirurgie</h3>
-            <p>
-              Šetrné chirurgické zákroky, které zvládnete bez obav a bolesti.
-            </p>
-          </div>
-
-          <!-- Rekonstrukce chrupu -->
-          <div class="col-md-6 service-box">
-            <img
-              src="images/rekonstrukce.jpg"
-              alt="Rekonstrukce chrupu"
-              class="custom-img"
-            />
-            <h3>Kompletní rekonstrukce chrupu</h3>
-            <p>Navrátíme vašemu úsměvu plnou funkci i krásu.</p>
-          </div>
-
-          <!-- Extrakce zubů moudrosti -->
-          <div class="col-md-6 service-box">
-            <img
-              src="images/moudrost.jpg"
-              alt="Extrakce zubů moudrosti"
-              class="custom-img"
-            />
-            <h3>Extrakce zubů moudrosti</h3>
-            <p>Zbavíme vás problémových zubů moudrosti rychle a bezpečně.</p>
-          </div>
+        <div class="service-card">
+          <img src="images/moudrost.jpg" alt="Extrakce zubů moudrosti" />
+          <h3>Extrakce zubů moudrosti</h3>
+          <p>Zbavíme vás problémových zubů moudrosti rychle a bezpečně.</p>
+        </div>
+        <div class="service-card">
+          <img src="images/implantologie.jpg" alt="Implantologie" />
+          <h3>Implantologie</h3>
+          <p>
+            Chybějící zuby? Nabízíme moderní a spolehlivé řešení pomocí
+            implantátů.
+          </p>
         </div>
       </div>
+    </section>
 
-      <div class="d-flex justify-content-center">
-        <h4 id="cenik" class="title" title="Ceník">Ceník</h4>
-      </div>
-      <div class="row"></div>
-      <div class="row">
-        <div class="d-flex justify-content-center">
-          <h4 id="ordinacni_hodiny" class="title" title="Ordinační hodiny">
-            Ordinační hodiny
-          </h4>
-        </div>
-      </div>
-      <div class="row">
-        <section class="hours-section">
-          <table class="hours-table">
-            <tr>
-              <th>Den</th>
-              <th>Čas</th>
-            </tr>
-            <tr>
-              <td>Pondělí</td>
-              <td>7:00 – 14:00</td>
-            </tr>
-            <tr>
-              <td>Úterý</td>
-              <td>16:00 – 19:00</td>
-            </tr>
-            <tr>
-              <td>Středa</td>
-              <td>15:00 – 18:00</td>
-            </tr>
-            <tr>
-              <td>Čtvrtek</td>
-              <td>7:00 – 15:00</td>
-            </tr>
-            <tr>
-              <td>Pátek</td>
-              <td>6:00 – 12:00</td>
-            </tr>
-          </table>
-          <div class="info-text">
-            <p>
-              Text lze modře zaměřit co záběr i co na běžného pracovce
-              ambulance.
-            </p>
-            <p><strong>!!! Neplatí na nouzty</strong></p>
-            <p>
-              Napište rychle něco na nouzy:
-              <a href="mailto:ambulance@gmail.com">ambulance@gmail.com</a><br />
-              +420 111 556 78
-            </p>
-          </div>
-        </section>
-      </div>
-      <div class="row">
-        <div class="d-flex justify-content-center">
-          <h4 id="kontakty" class="title" title="Kontakty">Kontakty</h4>
-        </div>
-      </div>
+    <section class="section" id="cenik"><h2>Ceník</h2></section>
 
-      <div class="row">
-        <div class="col text-center contacts">
-          <a href="" class="contact-link" target="_blank" title="Open LinkedIn"
-            ><i class="fa-brands fa-facebook"></i>
-          </a>
-        </div>
-        <div class="col text-center contacts">
-          <a href="" class="contact-link" target="_blank" title="Open TikTok"
-            ><i class="fa-brands fa-tiktok"></i
-          ></a>
-        </div>
-        <div class="col text-center contacts">
-          <a href="" class="contact-link" target="_blank" title="Open Instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-        </div>
+    <section class="hours-section section" id="ordinacnihodiny">
+      <h2>Ordinační hodiny</h2>
+      <table class="hours-table">
+        <tr>
+          <th>Den</th>
+          <th>Čas</th>
+        </tr>
+        <tr>
+          <td>Pondělí</td>
+          <td>7:00 – 14:00</td>
+        </tr>
+        <tr>
+          <td>Úterý</td>
+          <td>16:00 – 19:00</td>
+        </tr>
+        <tr>
+          <td>Středa</td>
+          <td>15:00 – 18:00</td>
+        </tr>
+        <tr>
+          <td>Čtvrtek</td>
+          <td>7:00 – 15:00</td>
+        </tr>
+        <tr>
+          <td>Pátek</td>
+          <td>6:00 – 12:00</td>
+        </tr>
+      </table>
+      <div class="info-text">
+        <p>
+          Text lze modře zaměřit co záběr i co na běžného pracovce ambulance.
+        </p>
+        <p><strong>!!! Neplatí na nouzty</strong></p>
+        <p>
+          Napište rychle něco na nouzy:
+          <a href="mailto:ambulance@gmail.com">ambulance@gmail.com</a><br />
+          +420 111 556 78
+        </p>
       </div>
+    </section>
+
+    <section class="section" id="kontakty"><h2>Kontakty</h2></section>
+
+    <div class="contacts">
+      <a href="#" class="contact-link" title="Facebook">Facebook</a>
+      <a href="#" class="contact-link" title="TikTok">TikTok</a>
+      <a href="#" class="contact-link" title="Instagram">Instagram</a>
     </div>
   </body>
 </html>
