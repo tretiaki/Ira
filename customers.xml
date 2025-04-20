@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<customers>
+  <customer id="1">
+    <name>Jan Novák</name>
+    <email>jan.novak@example.com</email>
+    <phone>+420601123456</phone>
+    <registered>2024-01-15</registered>
+  </customer>
+  <customer id="2">
+    <name>Petra Svobodová</name>
+    <email>petra.svobodova@example.com</email>
+    <phone>+420602234567</phone>
+    <registered>2023-11-30</registered>
+  </customer>
+  <customer id="3">
+    <name>Tomáš Dvořák</name>
+    <email>tomas.dvorak@example.com</email>
+    <phone>+420603345678</phone>
+    <registered>2024-03-05</registered>
+  </customer>
+  <customer id="4">
+    <name>Lucie Malá</name>
+    <email>lucie.mala@example.com</email>
+    <phone>+420604456789</phone>
+    <registered>2023-12-20</registered>
+  </customer>
+  <customer id="5">
+    <name>Pavel Král</name>
+    <email>pavel.kral@example.com</email>
+    <phone>+420605567890</phone>
+    <registered>2024-02-10</registered>
+  </customer>
+  <customer id="6">
+    <name>Martina Hájková</name>
+    <email>martina.hajkova@example.com</email>
+    <phone>+420606678901</phone>
+    <registered>2024-04-01</registered>
+  </customer>
+  <customer id="7">
+    <name>David Horák</name>
+    <email>david.horak@example.com</email>
+    <phone>+420607789012</phone>
+    <registered>2024-03-22</registered>
+  </customer>
+  <customer id="8">
+    <name>Eva Černá</name>
+    <email>eva.cerna@example.com</email>
+    <phone>+420608890123</phone>
+    <registered>2024-01-28</registered>
+  </customer>
+  <customer id="9">
+    <name>Michal Veselý</name>
+    <email>michal.vesely@example.com</email>
+    <phone>+420609901234</phone>
+    <registered>2023-10-15</registered>
+  </customer>
+  <customer id="10">
+    <name>Klára Doležalová</name>
+    <email>klara.dolezalova@example.com</email>
+    <phone>+420601012345</phone>
+    <registered>2024-02-27</registered>
+  </customer>
+</customers>
+
