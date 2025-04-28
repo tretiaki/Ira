@@ -1,64 +1,106 @@
-<?xml version="1.0" ?>
-<customers>
-  <customer id="1">
-    <name>Jan Novák</name>
-    <email>jan.novak@example.com</email>
-    <phone>+420601123456</phone>
-    <registered>2024-01-15</registered>
-  </customer>
-  <customer id="2">
-    <name>Petra Svobodová</name>
-    <email>petra.svobodova@example.com</email>
-    <phone>+420602234567</phone>
-    <registered>2023-11-30</registered>
-  </customer>
-  <customer id="3">
-    <name>Tomáš Dvořák</name>
-    <email>tomas.dvorak@example.com</email>
-    <phone>+420603345678</phone>
-    <registered>2024-03-05</registered>
-  </customer>
-  <customer id="4">
-    <name>Lucie Malá</name>
-    <email>lucie.mala@example.com</email>
-    <phone>+420604456789</phone>
-    <registered>2023-12-20</registered>
-  </customer>
-  <customer id="5">
-    <name>Pavel Král</name>
-    <email>pavel.kral@example.com</email>
-    <phone>+420605567890</phone>
-    <registered>2024-02-10</registered>
-  </customer>
-  <customer id="6">
-    <name>Martina Hájková</name>
-    <email>martina.hajkova@example.com</email>
-    <phone>+420606678901</phone>
-    <registered>2024-04-01</registered>
-  </customer>
-  <customer id="7">
-    <name>David Horák</name>
-    <email>david.horak@example.com</email>
-    <phone>+420607789012</phone>
-    <registered>2024-03-22</registered>
-  </customer>
-  <customer id="8">
-    <name>Eva Černá</name>
-    <email>eva.cerna@example.com</email>
-    <phone>+420608890123</phone>
-    <registered>2024-01-28</registered>
-  </customer>
-  <customer id="9">
-    <name>Michal Veselý</name>
-    <email>michal.vesely@example.com</email>
-    <phone>+420609901234</phone>
-    <registered>2023-10-15</registered>
-  </customer>
-  <customer id="10">
-    <name>Klára Doležalová</name>
-    <email>klara.dolezalova@example.com</email>
-    <phone>+420601012345</phone>
-    <registered>2024-02-27</registered>
-  </customer>
-</customers>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<company xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://example.com/company schema.xsd"
+         xmlns="http://example.com/company">
+  <companyName>Acme Corporation</companyName>
+  <departments>
+    <department id="D1" type="research">
+      <departmentName>R&D</departmentName>
+      <teams>
+        <team id="T1">
+          <teamName>Alpha</teamName>
+          <members>
+            <member id="M1" level="senior">
+              <memberName>Jan Novák</memberName>
+              <email type="work">jan.novak@acme.com</email>
+              <phone type="mobile">+420601123456</phone>
+              <address>
+                <street>Main Street 1</street>
+                <city>Prague</city>
+                <postalCode>11000</postalCode>
+                <country>Czech Republic</country>
+              </address>
+              <role>Developer</role>
+              <salary currency="EUR">55000</salary>
+              <hireDate>2018-06-15</hireDate>
+              <performance>
+                <evaluation score="A"/>
+                <comments>Excellent</comments>
+              </performance>
+            </member>
+            <member id="M2" level="junior">
+              <memberName>Petra Svobodová</memberName>
+              <email type="personal">petra.svobodova@example.com</email>
+              <phone type="landline">+420602234567</phone>
+              <address>
+                <street>2nd Avenue 23</street>
+                <city>Brno</city>
+                <postalCode>60200</postalCode>
+                <country>Czech Republic</country>
+              </address>
+              <role>Tester</role>
+              <salary currency="CZK">400000</salary>
+              <hireDate>2021-03-01</hireDate>
+              <!-- choose: include Project only if assigned -->
+              <project id="P1" priority="high">
+                <projectName>Project X</projectName>
+                <deadline>2024-12-31</deadline>
+              </project>
+            </member>
+          </members>
+        </team>
+        <team id="T2">
+          <teamName>Beta</teamName>
+          <members>
+            <member id="M3" level="mid">
+              <memberName>Tomáš Dvořák</memberName>
+              <email type="work">tomas.dvorak@acme.com</email>
+              <phone type="mobile">+420603345678</phone>
+              <address>
+                <street>3rd Street 5</street>
+                <city>Ostrava</city>
+                <postalCode>70200</postalCode>
+                <country>Czech Republic</country>
+              </address>
+              <role>Analyst</role>
+              <salary currency="EUR">48000</salary>
+              <hireDate>2019-11-20</hireDate>
+              <skills>
+                <skill>SQL</skill>
+                <skill>Python</skill>
+              </skills>
+            </member>
+          </members>
+        </team>
+      </teams>
+    </department>
+    <department id="D2" type="marketing">
+      <departmentName>Marketing</departmentName>
+      <teams>
+        <team id="T3">
+          <teamName>Gamma</teamName>
+          <members>
+            <member id="M4" level="senior">
+              <memberName>Lucie Malá</memberName>
+              <email type="work">lucie.mala@acme.com</email>
+              <phone type="mobile">+420604456789</phone>
+              <address>
+                <street>4th Boulevard 9</street>
+                <city>Plzen</city>
+                <postalCode>30100</postalCode>
+                <country>Czech Republic</country>
+              </address>
+              <role>Manager</role>
+              <salary currency="EUR">60000</salary>
+              <hireDate>2017-02-10</hireDate>
+              <project id="P2" priority="medium">
+                <projectName>Brand Relaunch</projectName>
+                <deadline>2025-06-30</deadline>
+              </project>
+            </member>
+          </members>
+        </team>
+      </teams>
+    </department>
+  </departments>
+</company>

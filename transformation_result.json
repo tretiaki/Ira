@@ -1,0 +1,8 @@
+{
+    "members": [
+      { "id": "M1", "name": "Jan Novák", "role": "Developer", "salary": 55000 },
+      { "id": "M2", "name": "Petra Svobodová", "role": "Tester", "salary": 400000 },
+      { "id": "M3", "name": "Tomáš Dvořák", "role": "Analyst", "salary": 48000 },
+      { "id": "M4", "name": "Lucie Malá", "role": "Manager", "priority": "medium", "salary": 60000 }
+    ]
+  }

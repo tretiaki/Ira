@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://example.com/company"
+           xmlns="http://example.com/company"
+           elementFormDefault="qualified">
+
+  <!-- Root element -->
+  <xs:element name="company" type="CompanyType"/>
+
+  <xs:complexType name="CompanyType">
+    <xs:sequence>
+      <xs:element name="companyName" type="xs:string"/>
+      <xs:element name="departments" type="DepartmentsType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DepartmentsType">
+    <xs:sequence>
+      <xs:element name="department" type="DepartmentType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DepartmentType">
+    <xs:sequence>
+      <xs:element name="departmentName" type="xs:string"/>
+      <xs:element name="teams" type="TeamsType"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="type" type="xs:string"/>
+  </xs:complexType>
+
+  <xs:complexType name="TeamsType">
+    <xs:sequence>
+      <xs:element name="team" type="TeamType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TeamType">
+    <xs:sequence>
+      <xs:element name="teamName" type="xs:string"/>
+      <xs:element name="members" type="MembersType"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="MembersType">
+    <xs:sequence>
+      <xs:element name="member" type="MemberType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="MemberType">
+    <xs:sequence>
+      <xs:element name="memberName" type="xs:string"/>
+      <xs:element name="email" type="EmailType"/>
+      <xs:element name="phone" type="PhoneType"/>
+      <xs:element name="address" type="AddressType"/>
+      <xs:element name="role" type="RoleEnum"/>
+      <xs:element name="salary" type="SalaryType"/>
+      <xs:element name="hireDate" type="xs:date"/>
+      <xs:element name="performance" type="PerformanceType" minOccurs="0"/>
+      <xs:element name="skills" type="SkillsType" minOccurs="0"/>
+      <xs:element name="project" type="ProjectType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="level" type="LevelEnum"/>
+  </xs:complexType>
+
+  <!-- Additional types -->
+  <xs:complexType name="AddressType">
+    <xs:sequence>
+      <xs:element name="street" type="xs:string"/>
+      <xs:element name="city" type="xs:string"/>
+      <xs:element name="postalCode" type="PostalCodeType"/>
+      <xs:element name="country" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PerformanceType">
+    <xs:sequence>
+      <xs:element name="evaluation" type="EvaluationType"/>
+      <xs:element name="comments" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SkillsType">
+    <xs:sequence>
+      <xs:element name="skill" type="xs:string" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ProjectType">
+    <xs:sequence>
+      <xs:element name="projectName" type="xs:string"/>
+      <xs:element name="deadline" type="xs:date"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+    <xs:attribute name="priority" type="PriorityEnum"/>
+  </xs:complexType>
+
+  <!-- Simple types and restrictions -->
+  <xs:simpleType name="EmailType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[^@]+@[^\.]+\..+"/>
+      <!-- custom restriction: valid email pattern -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PhoneType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\+\\d{11}"/>
+      <!-- custom restriction: international phone format -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PostalCodeType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\\d{5}"/>
+      <!-- custom restriction: 5-digit postal code -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="RoleEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Developer"/>
+      <xs:enumeration value="Tester"/>
+      <xs:enumeration value="Analyst"/>
+      <xs:enumeration value="Manager"/>
+      <!-- custom restriction: role enumeration -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LevelEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="junior"/>
+      <xs:enumeration value="mid"/>
+      <xs:enumeration value="senior"/>
+      <!-- custom restriction: level enumeration -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="SalaryType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="30000"/>
+      <!-- custom restriction: minimum salary 30000 -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PriorityEnum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="high"/>
+      <xs:enumeration value="medium"/>
+      <xs:enumeration value="low"/>
+      <!-- custom restriction: priority levels -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- 10 unique attributes: id, type, level, currency, priority, score, etc. -->
+</xs:schema>
